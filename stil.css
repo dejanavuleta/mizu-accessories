@@ -634,15 +634,16 @@ a:hover .email {
         height:30px;
     }
 
-    .theme-icons{
-        right:15px;
-        top:15px;
-    }
-
-    .font-box{
-        right:60px;
-        top:15px;
-    }
+.theme-icons{
+    bottom:15px;
+    right:15px;
+    top:auto;
+}
+.font-box{
+    bottom:12px;
+    right:60px;
+    top:auto;
+}
     .hamburger{
     display:block;
 }
