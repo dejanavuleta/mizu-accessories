@@ -562,6 +562,15 @@ a:hover .email {
     margin-top:40px;
 }
 
+.hamburger{
+    display:none;
+    font-size:35px;
+    text-align:center;
+    cursor:pointer;
+    color:white;
+    margin:15px 0;
+}
+
 @media (max-width:768px){
 
     .products{
@@ -570,6 +579,25 @@ a:hover .email {
 
     .navbar ul{
         flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .navbar{
+    display:none;
+}
+    .navbar.prikazi{
+    display:block;
+    width:90%;
+    margin:0 auto 20px auto;
+}
+
+    .intro{
+        height:250px;
+    }
+
+    .intro-tekst{
+        font-size:28px;
     }
 
     .o-nama{
@@ -584,5 +612,39 @@ a:hover .email {
         width:100%;
         height:auto;
     }
+
+    .header{
+        padding:10px;
+        min-height:auto;
+        height:170px;
+    }
+
+    .logo{
+        width:180px;
+        max-width:70%;
+    }
+
+    .font-icon{
+        width:30px;
+        height:30px;
+    }
+
+    .tamna-tema{
+        width:30px;
+        height:30px;
+    }
+
+    .theme-icons{
+        right:15px;
+        top:15px;
+    }
+
+    .font-box{
+        right:60px;
+        top:15px;
+    }
+    .hamburger{
+    display:block;
+}
 
 }
