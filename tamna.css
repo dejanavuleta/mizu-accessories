@@ -465,8 +465,30 @@ a:hover .broj {
     margin-top:40px;
 }
 
+.hamburger{
+    display:none;
+    font-size:35px;
+    text-align:center;
+    cursor:pointer;
+    color:white;
+    margin:15px 0;
+}
+
 @media (max-width:768px){
 
+    .hamburger{
+    display:block;
+}
+
+.navbar{
+    display:none;
+}
+
+.navbar.prikazi{
+    display:block;
+    width:90%;
+    margin:0 auto 20px auto;
+} 
     .products{
         grid-template-columns:1fr;
     }
@@ -487,5 +509,19 @@ a:hover .broj {
         width:100%;
         height:auto;
     }
+  .header{
+    height:170px;
+}
 
+.logo{
+    width:180px;
+}
+
+.intro{
+    height:250px;
+}
+
+.intro-tekst{
+    font-size:28px;
+}
 }
