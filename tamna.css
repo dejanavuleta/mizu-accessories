@@ -476,25 +476,31 @@ a:hover .broj {
 
 @media (max-width:768px){
 
-    .hamburger{
-    display:block;
-}
-
-.navbar{
-    display:none;
-}
-
-.navbar.prikazi{
-    display:block;
-    width:90%;
-    margin:0 auto 20px auto;
-} 
     .products{
         grid-template-columns:1fr;
     }
 
     .navbar ul{
         flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .navbar{
+    display:none;
+}
+    .navbar.prikazi{
+    display:block;
+    width:90%;
+    margin:0 auto 20px auto;
+}
+
+    .intro{
+        height:250px;
+    }
+
+    .intro-tekst{
+        font-size:28px;
     }
 
     .o-nama{
@@ -509,19 +515,40 @@ a:hover .broj {
         width:100%;
         height:auto;
     }
-  .header{
-    height:170px;
+
+    .header{
+        padding:10px;
+        min-height:auto;
+        height:170px;
+    }
+
+    .logo{
+        width:180px;
+        max-width:70%;
+    }
+
+    .font-icon{
+        width:30px;
+        height:30px;
+    }
+
+    .tamna-tema{
+        width:30px;
+        height:30px;
+    }
+
+.theme-icons{
+    bottom:15px;
+    right:15px;
+    top:auto;
+}
+.font-box{
+    bottom:12px;
+    right:60px;
+    top:auto;
+}
+    .hamburger{
+    display:block;
 }
 
-.logo{
-    width:180px;
-}
-
-.intro{
-    height:250px;
-}
-
-.intro-tekst{
-    font-size:28px;
-}
 }
