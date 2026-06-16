@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Oceni nas</title>
+
+<meta name="description" content="Ocena korisničkog iskustva sajta MiZu Accessories">
+<meta name="keywords" content="MiZu, hirurške kape, ocena sajta, recenzije">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+    body{
+        background-color:#b37ec0;
+    }
+
+    .review-card{
+        background:white;
+        border-radius:20px;
+        padding:40px;
+        box-shadow:0 0 20px rgba(0,0,0,0.15);
+    }
+
+    .naslov{
+        color:#b37ec0;
+        font-weight:bold;
+        margin-bottom:25px;
+    }
+
+</style>
+<body>
+
+<div class="container py-5">
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <div class="review-card">
+
+            <h1 class="text-center naslov">
+                Oceni nas
+            </h1>
+
+            <p class="text-center mb-4">
+                Vaše mišljenje nam je veoma važno.
+            </p>
+
+            <form id="reviewForm">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+                            Ime
+                        </label>
+
+                        <input
+                        type="text"
+                        id="ime"
+                        class="form-control"
+                        required>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+                            Prezime
+                        </label>
+
+                        <input
+                        type="text"
+                        id="prezime"
+                        class="form-control"
+                        required>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Email adresa
+                    </label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Ocena sajta
+                    </label>
+
+                    <select
+                    id="ocena"
+                    class="form-select"
+                    required>
+
+                        <option value="">
+                            Izaberite ocenu
+                        </option>
+
+                        <option>Odlično</option>
+                        <option>Vrlo dobro</option>
+                        <option>Dobro</option>
+                        <option>Zadovoljavajuće</option>
+                        <option>Loše</option>
+
+                    </select>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label">
+                        Recenzija
+                    </label>
+
+                    <textarea
+                    id="recenzija"
+                    class="form-control"
+                    rows="5"
+                    required></textarea>
+
+                </div>
+
+                <div class="d-grid">
+
+                    <button
+                    type="submit"
+                    class="btn btn-dark btn-lg">
+
+                        Pošalji ocenu
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+
+document
+.getElementById("reviewForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const ime =
+    document.getElementById("ime").value.trim();
+
+    const prezime =
+    document.getElementById("prezime").value.trim();
+
+    const recenzija =
+    document.getElementById("recenzija").value.trim();
+
+    if(ime.length < 2){
+
+        alert(
+        "Ime mora sadržati najmanje 2 karaktera."
+        );
+
+        return;
+    }
+
+    if(prezime.length < 2){
+
+        alert(
+        "Prezime mora sadržati najmanje 2 karaktera."
+        );
+
+        return;
+    }
+
+    if(recenzija.length < 10){
+
+        alert(
+        "Recenzija mora sadržati najmanje 10 karaktera."
+        );
+
+        return;
+    }
+
+    alert(
+    "Hvala na oceni! Vaša recenzija je uspešno evidentirana."
+    );
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>

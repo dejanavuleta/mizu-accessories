@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiZu Accessories</title>
+    <meta name="description"
+content="MiZu Accessories - ručno izrađene hirurške kape za medicinsko osoblje">
+
+<meta name="keywords"
+content="hirurške kape, medicinske kape, MiZu Accessories">
+
+<meta name="author"
+content="Milica Zubić">
+    <link id="tema-stil" rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<header class="header">
+
+    <img src="slike/tekst 1 beo.png" class="logo">
+
+  <div class="font-box">
+    <img src="slike/veci tekst.png"
+         class="font-icon"
+         onclick="promeniFont()" title="Povećaj veličinu teksta">
+</div>
+
+    <div class="theme-icons">
+        <img src="slike/noc.png" id="tema-ikonica" class="tamna-tema" onclick="promeniTemu()">
+    </div>
+
+</header>
+
+<main>
+
+        <nav class="navbar">
+    <ul>
+        <li><a href="index.html">GLAVNA STRANICA</a></li>
+        <li><a href="proizvodi.html">PROIZVODI</a></li>
+        <li><a href="onama.html">O NAMA</a></li>
+        <li><a href="ocena.html">OCENI NAS</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+    </ul>
+</nav>
+
+
+<h1>PROIZVODI</h1>
+<div class="products">
+
+    <div class="product-card">
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <img class="slide">
+            <button class="next">&#10095;</button>
+        </div>
+        <button class="order-btn" onclick="openProduct(1)">Naruči</button>
+    </div>
+
+    <div class="product-card">
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <img class="slide">
+            <button class="next">&#10095;</button>
+        </div>
+        <button class="order-btn" onclick="openProduct(2)">Naruči</button>
+    </div>
+
+    <div class="product-card">
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <img class="slide">
+            <button class="next">&#10095;</button>
+        </div>
+        <button class="order-btn" onclick="openProduct(3)">Naruči</button>
+    </div>
+
+</div>
+
+<a href="KATALOG PROIZVODA.pdf" target="_blank">
+Preuzmi katalog proizvoda. Svi proizvodi na jednom mestu!
+</a>
+
+</main>
+<footer class="footer">
+    <p>Copyright &copy; 2026. Milica Zubić <br> All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

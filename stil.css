@@ -1,0 +1,588 @@
+
+body {
+    font-family: Bricolage Grotesque;
+    background-color: #b37ec0;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    width: calc(100% - 40px);
+    height: 250px;
+    
+    background-image: url("slike/headerslika.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px; 
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Notable", sans-serif;
+    color: #ffffff;
+}
+
+p {
+    font-family: Bricolage Grotesque;
+    text-align: justify;
+    color: #333;
+}
+
+.logo {
+    width: 260px;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+}
+
+.header {
+    position: relative;
+}
+
+.font-box{
+    position:absolute;
+    bottom:9px;
+    right:20px;
+}
+
+.font-icon{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.font-icon:hover{
+    transform:scale(1.15);
+}
+
+.uvecan-font{
+    font-size: 18px;
+}
+
+.uvecan-font p{
+    font-size: 20px;
+}
+
+.uvecan-font a{
+    font-size: 18px;
+}
+
+.uvecan-font button{
+    font-size: 18px;
+}
+
+.uvecan-font h1{
+    font-size: 55px;
+}
+
+.uvecan-font h2{
+    font-size: 35px;
+}
+
+.uvecan-font .intro-tekst{
+    font-size: 45px;
+}
+
+.theme-icons {
+    position: absolute;
+    bottom: 15px;
+    right: 85px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tamna-tema{
+    width: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tamna-tema:hover{
+    transform: scale(1.15);
+}
+
+section {
+    background: #e0dce4;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.intro {
+    position: relative;
+
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+
+    background-image: url("slike/introslika.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro-tekst {
+    font-family: "Notable", sans-serif;
+    font-size: 36px; 
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+    z-index: 1;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,0.8); 
+
+    transition: 0.3s;
+}
+
+.intro-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(5px);
+
+    opacity: 0;
+    transition: 0.4s;
+
+    z-index: 2;
+}
+
+.intro-content p {
+    color: white;
+}
+
+
+.intro-content {
+    text-align: center;
+    color: white;
+    font-family: "Notable", sans-serif;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.4s;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.intro:hover .intro-overlay {
+    opacity: 1;
+}
+
+.intro:hover .intro-tekst {
+    opacity: 0;
+}
+
+.intro:hover .intro-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.shop-dugme {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    background: white;
+    color: #333;
+    text-decoration: none;
+
+    font-family: "Notable", sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.shop-dugme:hover {
+    background: #b57edc;
+    color: white;
+    transform: scale(1.05);
+}
+
+.navbar {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    background-color: #ffffff;
+    
+    font-family: "Notable", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #b37ec0;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0;
+    padding: 15px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: #a269cb;}
+
+.navbar a {
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #b57edc;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.order-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.o-nama {
+    color: #333;
+    text-align: justify;
+    text-align: center;
+    font-size: large;
+    width: 50%;
+    margin: 0% auto;
+}
+
+.pecat {
+    width: 75px;
+    height: 75px;
+    align-content: center;
+    position: relative;
+    margin: 40px auto;
+    display: flex;
+}
+
+.instagram {
+    width: 75px;
+    height: 75px;
+    align-content: center;
+    position: relative;
+    margin: 40px auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.instagram:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(163, 69, 161, 0.6));
+}
+
+a:hover .instagram {
+    transform: scale(1.2);
+}
+
+.tiktok {
+    width: 100px;
+    height: 120px;
+    align-content: center;
+    position: relative;
+    margin: 40px auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tiktok:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(163, 69, 161, 0.6));
+}
+
+a:hover .tiktok {
+    transform: scale(1.2);
+}
+
+.broj {
+    width: 75px;
+    height: 75px;
+    align-content: center;
+    position: relative;
+    margin: 40px auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.broj:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(163, 69, 161, 0.6));
+}
+
+a:hover .broj {
+    transform: scale(1.2);
+}
+
+.email {
+    width: 75px;
+    height: 75px;
+    align-content: center;
+    position: relative;
+    margin: 40px auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.email:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(163, 69, 161, 0.6));
+}
+
+a:hover .email {
+    transform: scale(1.2);
+}
+
+.footer {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+    font-size: 14px;
+    color: #555;
+
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.potpis {
+    width: 250px;
+    height: 125px;
+    position: relative;
+    left: 750px;
+    bottom: 125px;
+    display: flex;
+}
+
+/*proizvod.css*/
+.product-section{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    width: fit-content;
+}
+
+.gallery{
+    position: relative;
+}
+
+#product-image{
+    width: 450px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.left{
+    left: -20px;
+}
+
+.right{
+    right: -20px;
+}
+
+.product-info{
+    max-width: 450px;
+}
+
+#product-name{
+    font-size: 42px;
+}
+
+#product-price{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#product-description{
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.details{
+    margin-top: 30px;
+}
+
+.quantity-box{
+    margin-top: 30px;
+}
+
+#quantity{
+    width: 70px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#add-to-cart{
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: black;
+    color: white;
+}
+
+
+.mapa-sekcija iframe{
+    display:block;
+    margin:0 auto;
+    border-radius:20px;
+}
+
+.mapa-sekcija{
+    text-align:center;
+    margin-top:40px;
+}
+
+@media (max-width:768px){
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+    }
+
+    .o-nama{
+        width:90%;
+    }
+
+    .product-section{
+        flex-direction:column;
+    }
+
+    #product-image{
+        width:100%;
+        height:auto;
+    }
+
+}
