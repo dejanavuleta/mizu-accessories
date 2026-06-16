@@ -180,3 +180,12 @@ if(window.location.pathname.includes("product.html")){
     });
 
 }
+
+function toggleMenu(){
+
+    const meni =
+    document.getElementById("mobilniMeni");
+
+    meni.classList.toggle("prikazi");
+
+}
