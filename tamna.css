@@ -319,6 +319,24 @@ body {
     padding: 20px;
 }
 
+.product-section{
+    display:flex;
+    gap:60px;
+    align-items:center;
+    justify-content:center;
+
+    background:white;
+    padding:40px;
+    border-radius:25px;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+}
+
 .product-card {
     border: 1px solid #3d3d3d;
     border-radius: 10px;
