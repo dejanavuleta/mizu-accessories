@@ -577,7 +577,12 @@ a:hover .email {
 }
 
 @media (max-width:768px){
-
+    .potpis{
+        position:static;
+        width:180px;
+        height:auto;
+        margin:20px auto;
+    }
     .products{
         grid-template-columns:1fr;
     }
