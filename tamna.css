@@ -372,13 +372,20 @@ body {
     margin: 0% auto;
 }
 
-.pecat {
-    width: 75px;
-    height: 75px;
-    align-content: center;
-    position: relative;
-    margin: 40px auto;
-    display: flex;
+.pecat{
+    width:75px;
+    height:75px;
+    margin:0;
+    position:static;
+    display:block;
+}
+
+.potpis{
+    width:250px;
+    height:auto;
+    margin:0;
+    position:static;
+    display:block;
 }
 
 .autor {
@@ -450,14 +457,6 @@ a:hover .broj {
     transform: scale(1.2);
 }
 
-.potpis {
-    width: 250px;
-    height: 125px;
-    position: relative;
-    left: 750px;
-    bottom: 125px;
-    display: flex;
-}
 
 /*proizvod.css*/
 .product-section{
