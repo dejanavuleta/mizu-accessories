@@ -319,25 +319,6 @@ body {
     padding: 20px;
 }
 
-.product-section{
-    display:flex;
-    gap:60px;
-    align-items:center;
-    justify-content:center;
-
-    background:#1f1f1f;
-    color:white;
-    padding:40px;
-    border-radius:25px;
-
-    box-shadow:0 0 20px rgba(0,0,0,0.1);
-
-    width:90%;
-    max-width:1200px;
-
-    margin:50px auto;
-}
-
 .product-card {
     border: 1px solid #3d3d3d;
     border-radius: 10px;
@@ -471,6 +452,101 @@ a:hover .broj {
     bottom: 125px;
     display: flex;
 }
+
+/*proizvod.css*/
+.product-section{
+    display:flex;
+    gap:60px;
+    align-items:center;
+    justify-content:center;
+
+    background: black;
+    padding:40px;
+    border-radius:25px;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+}
+
+.gallery{
+    position: relative;
+}
+
+#product-image{
+    width: 600px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.left{
+    left: -20px;
+}
+
+.right{
+    right: -20px;
+}
+
+.product-info{
+    max-width: 450px;
+}
+
+#product-name{
+    font-size: 42px;
+    color: white;
+}
+
+#product-price{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#product-description{
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.details{
+    margin-top: 30px;
+}
+
+.quantity-box{
+    margin-top: 30px;
+}
+
+#quantity{
+    width: 70px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#add-to-cart{
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: black;
+    color: white;
+}
+
 
 
 .mapa-sekcija iframe{
