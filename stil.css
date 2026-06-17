@@ -486,7 +486,7 @@ a:hover .email {
 }
 
 #product-image{
-    width: 450px;
+    width: 600px;
     height: 550px;
     object-fit: cover;
     border-radius: 20px;
@@ -518,6 +518,7 @@ a:hover .email {
 
 #product-name{
     font-size: 42px;
+    color: #000000;
 }
 
 #product-price{
