@@ -580,8 +580,21 @@ a:hover .broj {
         position:static;
         width:180px;
         height:auto;
-        margin:20px auto;
+        margin:0;
+        left: auto;
+        bottom: auto;
     }
+
+    .pecat {
+        width: 75px;
+        height: 75px;
+        margin: 0;}
+
+    .autor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;} 
     .products{
         grid-template-columns:1fr;
     }
