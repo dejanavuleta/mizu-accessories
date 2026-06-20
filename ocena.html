@@ -19,7 +19,7 @@
         background-color:#b37ec0;
     }
 
-    .review-card{
+    .ocena-kartica{
         background:white;
         border-radius:20px;
         padding:40px;
@@ -41,7 +41,7 @@
 
     <div class="col-lg-8">
 
-        <div class="review-card">
+        <div class="ocena-kartica">
 
             <h1 class="text-center naslov">
                 Oceni nas
@@ -166,7 +166,7 @@ document
 .getElementById("reviewForm")
 .addEventListener("submit", function(e){
 
-    e.preventDefault();
+    e.prethodnientDefault();
 
     const ime =
     document.getElementById("ime").value.trim();

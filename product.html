@@ -20,25 +20,25 @@ content="Milica Zubić">
 
     <img src="slike/tekst 1 beo.png" class="logo">
 
-  <div class="font-box">
+  <div class="font-ikonica">
     <img src="slike/veci tekst.png"
-         class="font-icon"
+         class="font-slika"
          onclick="promeniFont()" title="Povećaj veličinu teksta">
 </div>
 
-    <div class="theme-icons">
+    <div class="teme-ikonice">
         <img src="slike/noc.png" id="tema-ikonica" class="tamna-tema" onclick="promeniTemu()">
     </div>
 
 </header>
 
-<div class="hamburger" onclick="toggleMenu()">
+<div class="hamburger" onclick="otvoriMeni()">
     ☰
 </div>
 
 <main>
 
-<nav class="navbar" id="mobilniMeni">
+<nav class="navigacija" id="mobilniMeni">
     <ul>
         <li><a href="index.html">GLAVNA STRANA</a></li>
         <li><a href="proizvodi.html">PROIZVODI</a></li>
@@ -48,28 +48,28 @@ content="Milica Zubić">
     </ul>
 </nav>
 
-<section class="product-section">
+<section class="proizvod-sekcija">
 
-    <div class="gallery">
+    <div class="galerija">
 
-        <button class="arrow left">&#10094;</button>
+        <button class="strelica levo">&#10094;</button>
 
-        <img id="product-image">
+        <img id="proizvod-slika" alt="MiZu Hirurska kapa">
 
-        <button class="arrow right">&#10095;</button>
+        <button class="strelica desno">&#10095;</button>
 
     </div>
 
 
-    <div class="product-info">
+    <div class="proizvod-info">
 
-        <h1 id="product-name"></h1><br><br><br>
+        <h1 id="proizvod-ime"></h1><br><br><br>
 
-        <h2 id="product-price"></h2>
+        <h2 id="proizvod-cena"></h2>
 
-        <p id="product-description"></p>
+        <p id="proizvod-opis"></p>
 
-        <div class="details">
+        <div class="detaljno">
 
             <p><strong>Materijal:</strong> 100% pamuk</p>
 

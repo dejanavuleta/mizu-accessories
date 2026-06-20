@@ -12,7 +12,7 @@ function promeniFont() {
     }
 }
 
-function toggleOverlay() {
+function otvoriOverlay() {
     const overlay = document.querySelector(".overlay");
     overlay.classList.toggle("active");
 }
@@ -66,7 +66,7 @@ window.onload = function () {
     }
 }
 
-const productImages = [
+const SlikeProizvoda = [
     [
         "slike/kapa1.jpg",
         "slike/kapa1 drugi stil.jpg"
@@ -79,36 +79,36 @@ const productImages = [
     ]
 ];
 
-const cards = document.querySelectorAll(".product-card");
+const cards = document.querySelectorAll(".kartica-proizvoda");
 
 cards.forEach((card, index) => {
     let currentIndex = 0;
 
     const img = card.querySelector(".slide");
-    const next = card.querySelector(".next");
-    const prev = card.querySelector(".prev");
+    const sledeci = card.querySelector(".sledeci");
+    const prethodni = card.querySelector(".prethodni");
 
-    img.src = productImages[index][currentIndex];
+    img.src = SlikeProizvoda[index][currentIndex];
 
-    next.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % productImages[index].length;
-        img.src = productImages[index][currentIndex];
+    sledeci.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % SlikeProizvoda[index].length;
+        img.src = SlikeProizvoda[index][currentIndex];
     });
 
-    prev.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + productImages[index].length) % productImages[index].length;
-        img.src = productImages[index][currentIndex];
+    prethodni.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + SlikeProizvoda[index].length) % SlikeProizvoda[index].length;
+        img.src = SlikeProizvoda[index][currentIndex];
     });
 });
 
-function openProduct(id) {
+function otvoriProizvod(id) {
     window.location.href = "product.html?id=" + id;
 }
 
 /*proizvod stranica*/
 if(window.location.pathname.includes("product.html")){
 
-    const products = [
+    const sviproizvodi = [
            {
     id: 1,
     name: "MIZU Hirurška kapa",
@@ -143,18 +143,18 @@ if(window.location.pathname.includes("product.html")){
 
     const productId = parseInt(params.get("id"));
 
-    const product = products.find(p => p.id === productId);
+    const product = sviproizvodi.find(p => p.id === productId);
 
-    document.getElementById("product-name").textContent = product.name;
-        document.getElementById("product-price").textContent = product.price;
+    document.getElementById("proizvod-ime").textContent = product.name;
+        document.getElementById("proizvod-cena").textContent = product.price;
 
-    document.getElementById("product-description").textContent = product.description;
+    document.getElementById("proizvod-opis").textContent = product.description;
 
 
 
     let currentImage = 0;
 
-    const image = document.getElementById("product-image");
+    const image = document.getElementById("proizvod-slika");
 
     image.src = product.images[currentImage];
 
@@ -170,7 +170,7 @@ if(window.location.pathname.includes("product.html")){
 
 
 
-    document.querySelector(".left").addEventListener("click", () => {
+    document.querySelector(".levo").addEventListener("click", () => {
 
         currentImage =
         (currentImage - 1 + product.images.length)
@@ -181,7 +181,7 @@ if(window.location.pathname.includes("product.html")){
 
 }
 
-function toggleMenu(){
+function otvoriMeni(){
 
     const meni =
     document.getElementById("mobilniMeni");

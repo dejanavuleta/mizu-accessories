@@ -90,20 +90,20 @@ body {
     position: relative;
 }
 
-.font-box{
+.font-ikonica{
     position:absolute;
     bottom:9px;
     right:20px;
 }
 
-.font-icon{
+.font-slika{
     width: 35px;
     height: 35px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.font-icon:hover{
+.font-slika:hover{
     transform:scale(1.15);
 }
 
@@ -127,7 +127,7 @@ body {
     font-size: 18px;
 }
 
-.theme-icons {
+.teme-ikonice {
     position: absolute;
     bottom: 15px;
     right: 85px;
@@ -209,12 +209,12 @@ body {
     z-index: 2;
 }
 
-.intro-content p {
+.intro-sadrzaj p {
     color: black;
 }
 
 
-.intro-content {
+.intro-sadrzaj {
     text-align: center;
     color: black;
     font-family: "Notable", sans-serif;
@@ -232,7 +232,7 @@ body {
     opacity: 0;
 }
 
-.intro:hover .intro-content {
+.intro:hover .intro-sadrzaj {
     transform: translateY(0);
     opacity: 1;
 }
@@ -260,7 +260,7 @@ body {
     transform: scale(1.05);
 }
 
- .navbar {
+ .navigacija {
     width: 90%;
     margin: 0 auto 20px auto;
     background-color: #000000;
@@ -274,7 +274,7 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-.navbar ul {
+.navigacija ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -283,21 +283,21 @@ body {
     padding: 15px 0;
 }
 
- .navbar a {
+ .navigacija a {
     text-decoration: none;
     color: #dbdbdb;
     font-weight: bold;
 
     transition: 0.3s;
 }
- .navbar a:hover {
+ .navigacija a:hover {
     color: #a269cb;}
 
-.navbar a {
+.navigacija a {
     position: relative;
 }
 
-.navbar a::after {
+.navigacija a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -308,18 +308,18 @@ body {
     transition: 0.3s;
 }
 
- .navbar a:hover::after {
+ .navigacija a:hover::after {
     width: 100%;
 }
 
- .products {
+ .sviproizvodi {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 20px;
 }
 
-.product-card {
+.kartica-proizvoda {
     border: 1px solid #3d3d3d;
     border-radius: 10px;
     padding: 10px;
@@ -339,7 +339,7 @@ body {
     transition: 0.3s;
 }
 
- .prev, .next {
+ .prethodni, .sledeci {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -350,10 +350,10 @@ body {
     cursor: pointer;
 }
 
- .prev { left: 5px; }
- .next { right: 5px; }
+ .prethodni { left: 5px; }
+ .sledeci { right: 5px; }
 
-.order-btn {
+.naruci-dugme {
     margin-top: 10px;
     padding: 10px;
     width: 100%;
@@ -392,7 +392,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;}
+    gap: 0px;}
 
 .instagram {
     width: 75px;
@@ -459,7 +459,7 @@ a:hover .broj {
 
 
 /*proizvod.css*/
-.product-section{
+.proizvod-sekcija{
     display:flex;
     gap:60px;
     align-items:center;
@@ -477,18 +477,18 @@ a:hover .broj {
     margin:50px auto;
 }
 
-.gallery{
+.galerija{
     position: relative;
 }
 
-#product-image{
+#proizvod-slika{
     width: 600px;
     height: 550px;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.arrow{
+.strelica{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -500,59 +500,47 @@ a:hover .broj {
     font-size: 22px;
 }
 
-.left{
+.levo{
     left: -20px;
 }
 
-.right{
+.desno{
     right: -20px;
 }
 
-.product-info{
+.proizvod-info{
     max-width: 450px;
 }
 
-#product-name{
+#proizvod-ime{
     font-size: 42px;
     color: white;
 }
 
-#product-price{
+#proizvod-cena{
     margin-top: 10px;
     font-size: 30px;
 }
 
-#product-description{
+#proizvod-opis{
     margin-top: 20px;
     line-height: 1.7;
 }
 
-.details{
+.detaljno{
     margin-top: 30px;
 }
 
-.quantity-box{
-    margin-top: 30px;
+
+.video-sekcija{
+    text-align:center;
+    margin:50px auto;
 }
 
-#quantity{
-    width: 70px;
-    padding: 10px;
-    font-size: 16px;
+.video-sekcija iframe{
+    max-width:100%;
+    border-radius:20px;
 }
-
-#add-to-cart{
-    margin-top: 30px;
-    padding: 15px 35px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    background: black;
-    color: white;
-}
-
-
 
 .mapa-sekcija iframe{
     display:block;
@@ -594,20 +582,20 @@ a:hover .broj {
         justify-content: center;
         align-items: center;
         gap: 15px;} 
-    .products{
+    .sviproizvodi{
         grid-template-columns:1fr;
     }
 
-    .navbar ul{
+    .navigacija ul{
         flex-direction:column;
         align-items:center;
         gap:10px;
     }
 
-    .navbar{
+    .navigacija{
     display:none;
 }
-    .navbar.prikazi{
+    .navigacija.prikazi{
     display:block;
     width:90%;
     margin:0 auto 20px auto;
@@ -625,11 +613,11 @@ a:hover .broj {
         width:90%;
     }
 
-    .product-section{
+    .proizvod-sekcija{
         flex-direction:column;
     }
 
-    #product-image{
+    #proizvod-slika{
         width:100%;
         height:auto;
     }
@@ -645,7 +633,7 @@ a:hover .broj {
         max-width:70%;
     }
 
-    .font-icon{
+    .font-slika{
         width:30px;
         height:30px;
     }
@@ -655,12 +643,12 @@ a:hover .broj {
         height:30px;
     }
 
-.theme-icons{
+.teme-ikonice{
     bottom:15px;
     right:15px;
     top:auto;
 }
-.font-box{
+.font-ikonica{
     bottom:12px;
     right:60px;
     top:auto;
