@@ -102,11 +102,11 @@ cards.forEach((card, index) => {
 });
 
 function otvoriProizvod(id) {
-    window.location.href = "product.html?id=" + id;
+    window.location.href = "proizvod.html?id=" + id;
 }
 
 /*proizvod stranica*/
-if(window.location.pathname.includes("product.html")){
+if(window.location.pathname.includes("proizvod.html")){
 
     const sviproizvodi = [
            {
@@ -160,7 +160,7 @@ if(window.location.pathname.includes("product.html")){
 
 
 
-    document.querySelector(".right").addEventListener("click", () => {
+    document.querySelector(".desno").addEventListener("click", () => {
 
         currentImage =
         (currentImage + 1) % product.images.length;
