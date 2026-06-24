@@ -164,7 +164,7 @@ body {
     height: 300px;
     margin: 20px auto;
 
-    background-image: url("https://i.pinimg.com/736x/e4/a4/f9/e4a4f93f09dcb8ea4f82cf15561ae504.jpg");
+    background-image: url("slike/introslika.jpg");
     background-size: cover;
     background-position: center;
 
@@ -310,6 +310,44 @@ body {
 
  .navigacija a:hover::after {
     width: 100%;
+}
+
+.padajuci{
+    position:relative;
+}
+
+.padajuci-meni{
+    display:none !important;
+    position:absolute;
+    top:100%;
+    margin-top: 0;
+    left:0;
+
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    background:black;
+    min-width:220px;
+
+    border-radius:0 0 15px 15px;
+    z-index:1000;
+}
+
+.padajuci-meni li{
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+
+.padajuci-meni a{
+    display:block;
+    padding:15px 20px;
+    text-align:center;
+}
+
+.padajuci:hover > .padajuci-meni{
+    display:block !important;
 }
 
  .sviproizvodi {

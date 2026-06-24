@@ -283,6 +283,44 @@ section {
     width: 100%;
 }
 
+.padajuci{
+    position:relative;
+}
+
+.padajuci-meni{
+    display:none !important;
+    position:absolute;
+    top:100%;
+    margin-top: 0;
+    left:0;
+
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    background:white;
+    min-width:220px;
+
+    border-radius:0 0 15px 15px;
+    z-index:1000;
+}
+
+.padajuci-meni li{
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+
+.padajuci-meni a{
+    display:block;
+    padding:15px 20px;
+    text-align:center;
+}
+
+.padajuci:hover > .padajuci-meni{
+    display:block !important;
+}
+
 .sviproizvodi {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
